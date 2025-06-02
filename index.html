@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guia Bus</title>
+        <link rel="shortcut icon" href="src/imagens/faviconn.png" type="image/x-icon" />
+        <link href="https://fonts.cdnfonts.com/css/chalet" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./src/css/reset.css" />
+        <link rel="stylesheet" href="./src/css/estilos.css" />
+        <link rel="stylesheet" href="./src/css/fontes.css" />
+        <link rel="stylesheet" href="./src/css/responsivo.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="logo">
+                <img src="./src/imagens/icone-bus.png" alt="Logo Rockstar Games" />
+                <hr />
+                <img src="./src/imagens/logo-bus.png" alt="Logo GTA V" />
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#comprar">Horários</a>
+                    </li>
+                    <li>
+                        <a href="#home">Rotas</a>
+                    </li>
+                    <li>
+                        <a href="https://support.rockstargames.com/categories/200013306" target="_blank">Suporte <img src="./src/imagens/icone-link.svg" alt="Icone de link de suporte" /></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="home" id="home">
+            <img class="imagem-fundo" src="./src/imagens/bg-main.png" alt="Fundo Interior de um Onibus" />
+
+            <div class="informacoes">
+                <div class="lista-de-jogos">
+                    <img src="./src/imagens/bus-stop.png" alt="Logo Bus" />
+                    <img src="./src/imagens/mapa.png" alt="Logo Mapa" />
+                </div>
+                <h1 class="titulo">Horários e rotas sempre atualizados para você</h1>
+                <p class="texto">Confira as informações completas sobre horários e paradas clicando no botão abaixo</p>
+
+                <a class="btn-comprar" href="#comprar">Ver horários e rotas</a>
+            </div>
+        </main>
+        <section class="compre-ja" id="comprar">
+            <h2 class="titulo">Rotas</h2>
+            <div class="cartao">
+                <img class="capa-do-jogo" src="./src/imagens/capa.png" alt="Capa do jogo GTA V" />
+
+                <div class="informacoes">
+                    <h3>Rotas de Ônibus para os bairros da Facens</h3>
+                    <p>
+                        Atenção <strong>se atente as rotas em feriados e finais de semanas</strong> podendo conter
+                        <strong>alterações</strong>
+                    </p>
+                    <ul class="plataformas">
+                        <li>
+                            <img src="./src/imagens/R01.png" alt="Rota 01" data-route="R01" />
+                        </li>
+                        <li>
+                            <img src="./src/imagens/R02.png" alt="Rota 02" data-route="R02" />
+                        </li>
+                        <li>
+                            <img src="./src/imagens/R03.png" alt="Rota 03" data-route="R03" />
+                        </li>
+                        <li>
+                            <img src="./src/imagens/R04.png" alt="Rota 04" data-route="R04" />
+                        </li>
+                        <li>
+                            <img src="./src/imagens/R05.png" alt="Rota 05" data-route="R05" />
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn-plataforma">
+                    Selecione o Bairro ou Rota
+                    <ul class="plataformas">
+                        <li>
+                            <img src="./src/imagens/R01.png" alt="Rota 01" data-route="R01" />
+                        </li>
+                        <li> 
+                            <img src="./src/imagens/R02.png" alt="Rota 02" data-route="R02" />
+                        </li>
+                        <li>
+                            <img src="./src/imagens/R03.png" alt="Rota 03" data-route="R03" />
+                        </li>
+                        <li>
+                            <img src="./src/imagens/R04.png" alt="Rota 04" data-route="R04" />
+                        </li>
+                        <li>
+                            <img src="./src/imagens/R05.png" alt="Rota 05" data-route="R05" />
+                        </li>
+                    </ul>
+                </button>
+            </div>
+
+            <div id="route-tabs-container" style="margin-top: 50px; width: 80%; max-width: 900px; text-align: left;">
+                <div id="route-R01" class="route-tab" style="display: none; background-color: #1a1a1a; padding: 30px; border-radius: 10px; margin-bottom: 20px;">
+                    <h3>Detalhes da Rota R01 - Bairro Central</h3>
+                    <p><strong>Horários:</strong> 06:00, 07:30, 09:00, 12:00, 17:00, 19:00</p>
+                    <p><strong>Principais Paradas:</strong> Terminal Urbano, Praça Principal, Shopping Cidade, Facens (Entrada Principal)</p>
+                    <p>Essa rota atende as principais áreas residenciais e comerciais do centro.</p>
+                </div>
+                <div id="route-R02" class="route-tab" style="display: none; background-color: #1a1a1a; padding: 30px; border-radius: 10px; margin-bottom: 20px;">
+                    <h3>Detalhes da Rota R02 - Zona Leste</h3>
+                    <p><strong>Horários:</strong> 06:15, 08:00, 10:30, 13:00, 16:30, 18:30</p>
+                    <p><strong>Principais Paradas:</strong> Supermercado Grande, Escola Municipal, Posto de Saúde, Facens (Portão Lateral)</p>
+                    <p>Rota essencial para moradores da Zona Leste, com pontos de comércio e serviços.</p>
+                </div>
+                <div id="route-R03" class="route-tab" style="display: none; background-color: #1a1a1a; padding: 30px; border-radius: 10px; margin-bottom: 20px;">
+                    <h3>Detalhes da Rota R03 - Zona Oeste</h3>
+                    <p><strong>Horários:</strong> 06:30, 08:15, 11:00, 14:00, 17:30, 19:30</p>
+                    <p><strong>Principais Paradas:</strong> Parque da Cidade, Hospital Regional, Bairro Novo Horizonte, Facens (Ponto de Ônibus da Av.)</p>
+                    <p>Cobre a região oeste, ideal para quem vem de bairros mais afastados.</p>
+                </div>
+                <div id="route-R04" class="route-tab" style="display: none; background-color: #1a1a1a; padding: 30px; border-radius: 10px; margin-bottom: 20px;">
+                    <h3>Detalhes da Rota R04 - Zona Norte</h3>
+                    <p><strong>Horários:</strong> 06:45, 08:45, 11:30, 14:30, 18:00, 20:00</p>
+                    <p><strong>Principais Paradas:</strong> Ginásio Esportivo, Praça do Estudante, Condomínio Residencial, Facens (Avenida Principal)</p>
+                    <p>Atende a área norte da cidade, com foco em regiões residenciais.</p>
+                </div>
+                <div id="route-R05" class="route-tab" style="display: none; background-color: #1a1a1a; padding: 30px; border-radius: 10px; margin-bottom: 20px;">
+                    <h3>Detalhes da Rota R05 - Perimetral Sul</h3>
+                    <p><strong>Horários:</strong> 07:00, 09:30, 12:30, 15:30, 19:00, 21:00</p>
+                    <p><strong>Principais Paradas:</strong> Centro Comercial Sul, Bairro do Lago, Posto Rodoviário, Facens (Próximo à Cantina)</p>
+                    <p>Uma rota mais longa, conectando a região sul à Facens.</p>
+                </div>
+            </div>
+            </section>
+        <script src="./src/js/index.js"></script>
+    </body>
+</html>
